@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="TEXTORA">
+  <defs>
+    <linearGradient id="textora-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#textora-gradient)"/>
+  <circle cx="50" cy="50" r="9" fill="#ffffff" opacity="0.16"/>
+  <path d="M13 17h38v7H36.5V47h-9V24H13v-7Z" fill="#ffffff"/>
+</svg>

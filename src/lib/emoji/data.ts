@@ -1,0 +1,737 @@
+import type { GlyphCategory, GlyphItem } from "../glyphs";
+
+export type EmojiCategoryId =
+  | "smile"
+  | "love"
+  | "nature"
+  | "animals"
+  | "food"
+  | "gaming"
+  | "objects"
+  | "celebration"
+  | "combinations";
+
+export const emojiCategories: readonly GlyphCategory[] = [
+  {
+    id: "smile",
+    label: "Senyum",
+    description: "Ekspresi harian dan reaksi ringan.",
+  },
+  {
+    id: "love",
+    label: "Cinta",
+    description: "Hati dan simbol kasih berwarna.",
+  },
+  {
+    id: "nature",
+    label: "Alam",
+    description: "Tumbuhan, bunga, dan cuaca.",
+  },
+  {
+    id: "animals",
+    label: "Hewan",
+    description: "Hewan peliharaan dan satwa populer.",
+  },
+  {
+    id: "food",
+    label: "Makanan",
+    description: "Makanan, minuman, dan camilan.",
+  },
+  {
+    id: "gaming",
+    label: "Gaming",
+    description: "Kontroler, trofi, dan elemen kompetitif.",
+  },
+  {
+    id: "objects",
+    label: "Benda",
+    description: "Benda sehari-hari untuk caption.",
+  },
+  {
+    id: "celebration",
+    label: "Perayaan",
+    description: "Pesta, hadiah, dan momen spesial.",
+  },
+  {
+    id: "combinations",
+    label: "Kombinasi",
+    description: "Rangkaian emoji siap tempel.",
+  },
+];
+
+export const emojis: readonly GlyphItem[] = [
+  {
+    value: "😀",
+    name: "Senyum lebar",
+    category: "smile",
+    keywords: ["senyum", "bahagia", "smile", "happy"],
+  },
+  {
+    value: "😃",
+    name: "Senyum mata besar",
+    category: "smile",
+    keywords: ["senyum", "mata", "smile", "ceria"],
+  },
+  {
+    value: "😄",
+    name: "Senyum ceria",
+    category: "smile",
+    keywords: ["senyum", "ceria", "smile", "happy"],
+  },
+  {
+    value: "😁",
+    name: "Gigi terlihat",
+    category: "smile",
+    keywords: ["gigi", "senyum", "grin", "ceria"],
+  },
+  {
+    value: "😆",
+    name: "Tertawa terbahak",
+    category: "smile",
+    keywords: ["tawa", "lucu", "laugh", "happy"],
+  },
+  {
+    value: "😅",
+    name: "Senyum gugup",
+    category: "smile",
+    keywords: ["gugup", "keringat", "nervous", "lucu"],
+  },
+  {
+    value: "😂",
+    name: "Tawa air mata",
+    category: "smile",
+    keywords: ["tawa", "air mata", "lol", "lucu"],
+  },
+  {
+    value: "🙂",
+    name: "Senyum tenang",
+    category: "smile",
+    keywords: ["senyum", "tenang", "santai", "smile"],
+  },
+  {
+    value: "🙃",
+    name: "Senyum terbalik",
+    category: "smile",
+    keywords: ["terbalik", "sarkas", "upside down", "lucu"],
+  },
+  {
+    value: "😉",
+    name: "Kedip",
+    category: "smile",
+    keywords: ["kedip", "wink", "isyarat", "lucu"],
+  },
+  {
+    value: "😊",
+    name: "Tersipu",
+    category: "smile",
+    keywords: ["malu", "tersipu", "blush", "manis"],
+  },
+  {
+    value: "😇",
+    name: "Malaikat",
+    category: "smile",
+    keywords: ["malaikat", "baik", "angel", "polos"],
+  },
+
+  {
+    value: "❤️",
+    name: "Hati merah",
+    category: "love",
+    keywords: ["hati", "merah", "love", "cinta"],
+  },
+  {
+    value: "🧡",
+    name: "Hati oranye",
+    category: "love",
+    keywords: ["hati", "oranye", "love", "hangat"],
+  },
+  {
+    value: "💛",
+    name: "Hati kuning",
+    category: "love",
+    keywords: ["hati", "kuning", "love", "ceria"],
+  },
+  {
+    value: "💚",
+    name: "Hati hijau",
+    category: "love",
+    keywords: ["hati", "hijau", "love", "alam"],
+  },
+  {
+    value: "💙",
+    name: "Hati biru",
+    category: "love",
+    keywords: ["hati", "biru", "love", "tenang"],
+  },
+  {
+    value: "💜",
+    name: "Hati ungu",
+    category: "love",
+    keywords: ["hati", "ungu", "love", "kreatif"],
+  },
+  {
+    value: "🖤",
+    name: "Hati hitam",
+    category: "love",
+    keywords: ["hati", "hitam", "love", "gelap"],
+  },
+  {
+    value: "🤍",
+    name: "Hati putih",
+    category: "love",
+    keywords: ["hati", "putih", "love", "polos"],
+  },
+  {
+    value: "🤎",
+    name: "Hati cokelat",
+    category: "love",
+    keywords: ["hati", "cokelat", "love", "hangat"],
+  },
+  {
+    value: "💔",
+    name: "Hati patah",
+    category: "love",
+    keywords: ["hati", "patah", "sedih", "broken"],
+  },
+  {
+    value: "💕",
+    name: "Dua hati",
+    category: "love",
+    keywords: ["hati", "dua", "love", "kasih"],
+  },
+  {
+    value: "💞",
+    name: "Hati berputar",
+    category: "love",
+    keywords: ["hati", "putar", "love", "pasangan"],
+  },
+
+  {
+    value: "🌿",
+    name: "Daun herbal",
+    category: "nature",
+    keywords: ["daun", "herbal", "alam", "hijau"],
+  },
+  {
+    value: "🌱",
+    name: "Tunas",
+    category: "nature",
+    keywords: ["tunas", "tanaman", "awal", "hijau"],
+  },
+  {
+    value: "🌳",
+    name: "Pohon rindang",
+    category: "nature",
+    keywords: ["pohon", "alam", "hijau", "teduh"],
+  },
+  {
+    value: "🌲",
+    name: "Pohon pinus",
+    category: "nature",
+    keywords: ["pohon", "pinus", "hutan", "alam"],
+  },
+  {
+    value: "🌵",
+    name: "Kaktus",
+    category: "nature",
+    keywords: ["kaktus", "gurun", "tanaman", "alam"],
+  },
+  {
+    value: "🌷",
+    name: "Tulip",
+    category: "nature",
+    keywords: ["tulip", "bunga", "alam", "musim semi"],
+  },
+  {
+    value: "🌸",
+    name: "Sakura",
+    category: "nature",
+    keywords: ["sakura", "bunga", "alam", "jepang"],
+  },
+  {
+    value: "🌺",
+    name: "Hibiscus",
+    category: "nature",
+    keywords: ["hibiscus", "bunga", "tropis", "alam"],
+  },
+  {
+    value: "🌻",
+    name: "Matahari",
+    category: "nature",
+    keywords: ["matahari", "bunga", "kuning", "alam"],
+  },
+  {
+    value: "🌼",
+    name: "Daisy",
+    category: "nature",
+    keywords: ["daisy", "bunga", "putih", "alam"],
+  },
+  {
+    value: "🍀",
+    name: "Semanggi",
+    category: "nature",
+    keywords: ["semanggi", "hoki", "daun", "alam"],
+  },
+  {
+    value: "🌈",
+    name: "Pelangi",
+    category: "nature",
+    keywords: ["pelangi", "warna", "cuaca", "rainbow"],
+  },
+
+  {
+    value: "🐶",
+    name: "Anjing",
+    category: "animals",
+    keywords: ["anjing", "peliharaan", "dog", "hewan"],
+  },
+  {
+    value: "🐱",
+    name: "Kucing",
+    category: "animals",
+    keywords: ["kucing", "peliharaan", "cat", "hewan"],
+  },
+  {
+    value: "🐭",
+    name: "Tikus",
+    category: "animals",
+    keywords: ["tikus", "mouse", "hewan", "kecil"],
+  },
+  {
+    value: "🐹",
+    name: "Hamster",
+    category: "animals",
+    keywords: ["hamster", "peliharaan", "hewan", "lucu"],
+  },
+  {
+    value: "🐰",
+    name: "Kelinci",
+    category: "animals",
+    keywords: ["kelinci", "rabbit", "hewan", "lucu"],
+  },
+  {
+    value: "🦊",
+    name: "Rubah",
+    category: "animals",
+    keywords: ["rubah", "fox", "hewan", "hutan"],
+  },
+  {
+    value: "🐻",
+    name: "Beruang",
+    category: "animals",
+    keywords: ["beruang", "bear", "hewan", "hutan"],
+  },
+  {
+    value: "🐼",
+    name: "Panda",
+    category: "animals",
+    keywords: ["panda", "hewan", "lucu", "bambu"],
+  },
+  {
+    value: "🐨",
+    name: "Koala",
+    category: "animals",
+    keywords: ["koala", "hewan", "australia", "lucu"],
+  },
+  {
+    value: "🐯",
+    name: "Macan",
+    category: "animals",
+    keywords: ["macan", "tiger", "hewan", "buas"],
+  },
+  {
+    value: "🦁",
+    name: "Singa",
+    category: "animals",
+    keywords: ["singa", "lion", "hewan", "berani"],
+  },
+  {
+    value: "🐮",
+    name: "Sapi",
+    category: "animals",
+    keywords: ["sapi", "cow", "hewan", "peternakan"],
+  },
+
+  {
+    value: "🍕",
+    name: "Pizza",
+    category: "food",
+    keywords: ["pizza", "makanan", "keju", "cepat saji"],
+  },
+  {
+    value: "🍔",
+    name: "Burger",
+    category: "food",
+    keywords: ["burger", "makanan", "cepat saji", "daging"],
+  },
+  {
+    value: "🍟",
+    name: "Kentang goreng",
+    category: "food",
+    keywords: ["kentang", "fries", "makanan", "camilan"],
+  },
+  {
+    value: "🌮",
+    name: "Taco",
+    category: "food",
+    keywords: ["taco", "makanan", "meksiko", "camilan"],
+  },
+  {
+    value: "🍣",
+    name: "Sushi",
+    category: "food",
+    keywords: ["sushi", "makanan", "jepang", "nasi"],
+  },
+  {
+    value: "🍜",
+    name: "Mie",
+    category: "food",
+    keywords: ["mie", "ramen", "makanan", "kuah"],
+  },
+  {
+    value: "🍩",
+    name: "Donat",
+    category: "food",
+    keywords: ["donat", "manis", "camilan", "dessert"],
+  },
+  {
+    value: "🍪",
+    name: "Kue",
+    category: "food",
+    keywords: ["kue", "cookie", "camilan", "manis"],
+  },
+  {
+    value: "🍰",
+    name: "Sepotong kue",
+    category: "food",
+    keywords: ["kue", "cake", "manis", "ulang tahun"],
+  },
+  {
+    value: "🍓",
+    name: "Stroberi",
+    category: "food",
+    keywords: ["stroberi", "buah", "merah", "manis"],
+  },
+  {
+    value: "🍉",
+    name: "Semangka",
+    category: "food",
+    keywords: ["semangka", "buah", "segar", "musim panas"],
+  },
+  {
+    value: "☕",
+    name: "Kopi",
+    category: "food",
+    keywords: ["kopi", "minuman", "cafe", "hangat"],
+  },
+
+  {
+    value: "🎮",
+    name: "Kontroler",
+    category: "gaming",
+    keywords: ["game", "kontroler", "gaming", "controller"],
+  },
+  {
+    value: "🕹️",
+    name: "Joystick",
+    category: "gaming",
+    keywords: ["game", "joystick", "gaming", "arcade"],
+  },
+  {
+    value: "🎯",
+    name: "Target",
+    category: "gaming",
+    keywords: ["game", "target", "gaming", "akurasi"],
+  },
+  {
+    value: "🏆",
+    name: "Trofi",
+    category: "gaming",
+    keywords: ["game", "trofi", "juara", "gaming"],
+  },
+  {
+    value: "🥇",
+    name: "Medali emas",
+    category: "gaming",
+    keywords: ["game", "medali", "juara", "gaming"],
+  },
+  {
+    value: "🎲",
+    name: "Dadu",
+    category: "gaming",
+    keywords: ["game", "dadu", "gaming", "acak"],
+  },
+  {
+    value: "👾",
+    name: "Alien pixel",
+    category: "gaming",
+    keywords: ["game", "alien", "gaming", "retro"],
+  },
+  {
+    value: "⚔️",
+    name: "Pedang silang",
+    category: "gaming",
+    keywords: ["game", "pedang", "gaming", "perang"],
+  },
+  {
+    value: "🛡️",
+    name: "Perisai",
+    category: "gaming",
+    keywords: ["game", "perisai", "gaming", "shield"],
+  },
+  {
+    value: "🔥",
+    name: "Api",
+    category: "gaming",
+    keywords: ["api", "fire", "gaming", "panas"],
+  },
+  {
+    value: "⚡",
+    name: "Petir",
+    category: "gaming",
+    keywords: ["petir", "listrik", "gaming", "cepat"],
+  },
+  {
+    value: "💀",
+    name: "Tengkorak",
+    category: "gaming",
+    keywords: ["tengkorak", "skull", "gaming", "gugur"],
+  },
+
+  {
+    value: "📱",
+    name: "Ponsel",
+    category: "objects",
+    keywords: ["ponsel", "hp", "benda", "phone"],
+  },
+  {
+    value: "💻",
+    name: "Laptop",
+    category: "objects",
+    keywords: ["laptop", "komputer", "kerja", "benda"],
+  },
+  {
+    value: "🎧",
+    name: "Headphone",
+    category: "objects",
+    keywords: ["headphone", "musik", "audio", "benda"],
+  },
+  {
+    value: "📷",
+    name: "Kamera",
+    category: "objects",
+    keywords: ["kamera", "foto", "benda", "camera"],
+  },
+  {
+    value: "📚",
+    name: "Buku",
+    category: "objects",
+    keywords: ["buku", "belajar", "benda", "book"],
+  },
+  {
+    value: "✏️",
+    name: "Pensil",
+    category: "objects",
+    keywords: ["pensil", "menulis", "benda", "pencil"],
+  },
+  {
+    value: "🎨",
+    name: "Palet seni",
+    category: "objects",
+    keywords: ["seni", "lukis", "kreatif", "benda"],
+  },
+  {
+    value: "🎵",
+    name: "Not musik",
+    category: "objects",
+    keywords: ["musik", "nada", "benda", "note"],
+  },
+  {
+    value: "🕶️",
+    name: "Kacamata hitam",
+    category: "objects",
+    keywords: ["kacamata", "hitam", "gaya", "benda"],
+  },
+  {
+    value: "⌚",
+    name: "Jam tangan",
+    category: "objects",
+    keywords: ["jam", "waktu", "benda", "watch"],
+  },
+  {
+    value: "🔑",
+    name: "Kunci",
+    category: "objects",
+    keywords: ["kunci", "akses", "benda", "key"],
+  },
+  {
+    value: "💡",
+    name: "Lampu",
+    category: "objects",
+    keywords: ["lampu", "ide", "benda", "light"],
+  },
+
+  {
+    value: "🎉",
+    name: "Konfeti",
+    category: "celebration",
+    keywords: ["pesta", "konfeti", "celebrate", "perayaan"],
+  },
+  {
+    value: "🎊",
+    name: "Bola konfeti",
+    category: "celebration",
+    keywords: ["pesta", "konfeti", "celebrate", "perayaan"],
+  },
+  {
+    value: "🎈",
+    name: "Balon",
+    category: "celebration",
+    keywords: ["balon", "pesta", "ulang tahun", "perayaan"],
+  },
+  {
+    value: "🎁",
+    name: "Hadiah",
+    category: "celebration",
+    keywords: ["hadiah", "kado", "gift", "perayaan"],
+  },
+  {
+    value: "🎂",
+    name: "Kue ulang tahun",
+    category: "celebration",
+    keywords: ["kue", "ulang tahun", "birthday", "perayaan"],
+  },
+  {
+    value: "🥳",
+    name: "Wajah pesta",
+    category: "celebration",
+    keywords: ["pesta", "party", "perayaan", "seru"],
+  },
+  {
+    value: "✨",
+    name: "Kilau",
+    category: "celebration",
+    keywords: ["kilau", "sparkle", "bersinar", "perayaan"],
+  },
+  {
+    value: "🎆",
+    name: "Kembang api",
+    category: "celebration",
+    keywords: ["kembang api", "fireworks", "perayaan", "malam"],
+  },
+  {
+    value: "🎇",
+    name: "Kembang api batang",
+    category: "celebration",
+    keywords: ["kembang api", "sparkler", "perayaan", "malam"],
+  },
+  {
+    value: "🪄",
+    name: "Tongkat sihir",
+    category: "celebration",
+    keywords: ["sihir", "magic", "tongkat", "perayaan"],
+  },
+  {
+    value: "💫",
+    name: "Bintang berputar",
+    category: "celebration",
+    keywords: ["bintang", "pusing", "dizzy", "kilau"],
+  },
+  {
+    value: "🌟",
+    name: "Bintang bersinar",
+    category: "celebration",
+    keywords: ["bintang", "shine", "berkilau", "perayaan"],
+  },
+
+  {
+    value: "✨💫",
+    name: "Kilau malam",
+    category: "combinations",
+    keywords: ["kilau", "malam", "bintang", "aesthetic"],
+  },
+  {
+    value: "🌸🌷",
+    name: "Taman lembut",
+    category: "combinations",
+    keywords: ["bunga", "taman", "lembut", "aesthetic"],
+  },
+  {
+    value: "🔥💯",
+    name: "Seratus persen",
+    category: "combinations",
+    keywords: ["api", "seratus", "mantap", "keren"],
+  },
+  {
+    value: "🎮🏆",
+    name: "Siap menang",
+    category: "combinations",
+    keywords: ["game", "trofi", "menang", "gaming"],
+  },
+  {
+    value: "❤️✨",
+    name: "Cinta berkilau",
+    category: "combinations",
+    keywords: ["cinta", "hati", "kilau", "love"],
+  },
+  {
+    value: "🌙⭐",
+    name: "Malam cerah",
+    category: "combinations",
+    keywords: ["malam", "bulan", "bintang", "senja"],
+  },
+  {
+    value: "☕📚",
+    name: "Kopi dan buku",
+    category: "combinations",
+    keywords: ["kopi", "buku", "tenang", "belajar"],
+  },
+  {
+    value: "🎧🎶",
+    name: "Musik harian",
+    category: "combinations",
+    keywords: ["musik", "headphone", "lagu", "harian"],
+  },
+  {
+    value: "🛡️⚔️",
+    name: "Siap bertarung",
+    category: "combinations",
+    keywords: ["perisai", "pedang", "game", "bertarung"],
+  },
+  {
+    value: "🎉🎊",
+    name: "Pesta meriah",
+    category: "combinations",
+    keywords: ["pesta", "konfeti", "perayaan", "meriah"],
+  },
+  {
+    value: "💻✨",
+    name: "Kerja kreatif",
+    category: "combinations",
+    keywords: ["laptop", "kreatif", "kerja", "kilau"],
+  },
+  {
+    value: "🌊🌴",
+    name: "Liburan pantai",
+    category: "combinations",
+    keywords: ["pantai", "liburan", "ombak", "tropis"],
+  },
+  {
+    value: "🍓🍰",
+    name: "Camilan manis",
+    category: "combinations",
+    keywords: ["stroberi", "kue", "manis", "camilan"],
+  },
+  {
+    value: "🐶🐾",
+    name: "Sahabat berbulu",
+    category: "combinations",
+    keywords: ["anjing", "jejak", "peliharaan", "hewan"],
+  },
+  {
+    value: "🦋🌺",
+    name: "Taman tropis",
+    category: "combinations",
+    keywords: ["kupu-kupu", "bunga", "tropis", "taman"],
+  },
+];
